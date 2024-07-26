@@ -36,7 +36,7 @@ flecheGauche.addEventListener("click", () =>{
     alert("fleche gauche appuyée");
     currentSlideIndex=(currentSlideIndex-1);
     if(currentSlideIndex<0){   
-        currentSlideIndex=3;
+        currentSlideIndex=slides.length-1;
     }
     deplacementIndex();
 });
@@ -45,7 +45,7 @@ flecheGauche.addEventListener("click", () =>{
 flecheDroite.addEventListener("click", () =>{
     alert("fleche droite appuyée");
     currentSlideIndex=(currentSlideIndex+1);
-    if(currentSlideIndex>3){
+    if(currentSlideIndex>slides.length-1){
         currentSlideIndex=0;
     }
     deplacementIndex();
