@@ -33,7 +33,6 @@ document.querySelectorAll(".dot")[currentSlideIndex].classList.add("dot_selected
 
 }
 flecheGauche.addEventListener("click", () =>{
-    alert("fleche gauche appuyée");
     currentSlideIndex=(currentSlideIndex-1);
     if(currentSlideIndex<0){   
         currentSlideIndex=slides.length-1;
@@ -43,7 +42,6 @@ flecheGauche.addEventListener("click", () =>{
 
 
 flecheDroite.addEventListener("click", () =>{
-    alert("fleche droite appuyée");
     currentSlideIndex=(currentSlideIndex+1);
     if(currentSlideIndex>slides.length-1){
         currentSlideIndex=0;
